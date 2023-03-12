@@ -1,3 +1,4 @@
+import 'package:demo/counter.dart';
 import 'package:demo/home.dart';
 import 'package:demo/page1.dart';
 import 'package:demo/page2.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // home: const CounterScreen(title: 'counter screen'),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),

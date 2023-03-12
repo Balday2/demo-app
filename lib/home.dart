@@ -1,4 +1,3 @@
-import 'package:demo/page1.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,10 +16,15 @@ class HomeScreen extends StatelessWidget {
           children: [
             TextButton(
               onPressed: (){
-                Navigator.push(
-                  context, 
-                  MaterialPageRoute(builder: (context) => Page1Screen())
-                );
+
+                //navigator.push ==> stack routes
+                // Navigator.push(
+                //   context, 
+                //   MaterialPageRoute(builder: (context) => const Page1Screen())
+                // );
+
+                //navigator.push ==> named routes
+                Navigator.pushNamed(context, '/page1');
               },
               child: const Text(
                 'go to page1',

@@ -25,7 +25,8 @@ class _CounterScreenSate extends State<CounterScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Nombre de clique'),
-            Text(_counter.toString()),
+            Text(_counter.toString(), 
+            style: const TextStyle(fontSize: 30.0)),
           ],
         ),
       ),
